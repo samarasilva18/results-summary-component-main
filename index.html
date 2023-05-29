@@ -29,7 +29,7 @@
   
       <div class="summary">
         <h1>Summary</h1>
-        <ul id="container"></ul>
+        <div id="container"></div>
 
         <div class="button-container">
           <button>Continue</button>
@@ -63,7 +63,7 @@
       fetch('./data.json').then(response => response.json()).then(data => {
         data.forEach(element => {
             var classname = getClassNameByCategory(element.category);
-            const list = document.createElement('div');
+            const list = document.createElement('ul');
             list.innerHTML = `<li class= ${classname}><p><img src='${element.icon}' alt='icon'>${element.category}</p><span>${element.score}<a> / 100</span></a></span>`
             summary.appendChild(list)
         });

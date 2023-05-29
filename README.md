@@ -69,11 +69,11 @@ This took me a while to figure out. I still feel like I could've made the classn
 var summary = document.getElementById('container');
 
 fetch('./data.json').then(response => response.json()).then(data => {
-  data.forEach(element => {
-    var classname = getClassNameByCategory(element.category);
-    const list = document.createElement('div');
-    list.innerHTML = `<li class= ${classname}><p><img src='${element.icon}'>${element.category}</p><span>${element.score}<a> / 100</span></a></span>`
-    summary.appendChild(list)
+        data.forEach(element => {
+            var classname = getClassNameByCategory(element.category);
+            const list = document.createElement('ul');
+            list.innerHTML = `<li class= ${classname}><p><img src='${element.icon}' alt='icon'>${element.category}</p><span>${element.score}<a> / 100</span></a></span>`
+            summary.appendChild(list)
         });
       }).catch(error => console.error('Error:', error));
 ```

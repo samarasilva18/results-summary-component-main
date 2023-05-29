@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
   
@@ -30,17 +29,19 @@
   
       <div class="summary">
         <h1>Summary</h1>
-        <div id="container"></div>
+        <ul id="container"></ul>
 
         <div class="button-container">
           <button>Continue</button>
         </div>
       </div>
     </main>
+    <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/samarasilva18">Samara Silva</a>.
     </div>
+  </footer>
     <script>
       var summary = document.getElementById('container');
 
@@ -63,7 +64,7 @@
         data.forEach(element => {
             var classname = getClassNameByCategory(element.category);
             const list = document.createElement('div');
-            list.innerHTML = `<li class= ${classname}><p><img src='${element.icon}'>${element.category}</p><span>${element.score}<a> / 100</span></a></span>`
+            list.innerHTML = `<li class= ${classname}><p><img src='${element.icon}' alt='icon'>${element.category}</p><span>${element.score}<a> / 100</span></a></span>`
             summary.appendChild(list)
         });
       }).catch(error => console.error('Error:', error));

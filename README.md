@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/samarasilva18/results-summary-component-main)
-- Live Site URL: [](https://samarasilva18.github.io/results-summary-component-main/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-json-flexbox-and-css-variables-sFkg_jl_Jz)
+- Live Site URL: [Site](https://samarasilva18.github.io/results-summary-component-main/)
 
 ## My process
 
